@@ -6,6 +6,9 @@ class File(ABC):
     def open(self):
         pass
 
+@abstractmethod
+def get_info(self):
+    pass
 
 
 class TextFile(File):
