@@ -16,9 +16,6 @@ class ContactList:
         if not Contact.validate_phone_number(phone_number):
             raise ValueError("Номер телефона должен содержать ровно 10 цифр")
 
-        contact = Contact(name, phone_number)
-        cls.all_contacts.append(contact)
-
 
 print(ContactList.all_contacts)
 
